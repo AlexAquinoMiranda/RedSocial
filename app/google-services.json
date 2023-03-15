@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977446787826",
+    "firebase_url": "https://redsocial-68a70-default-rtdb.firebaseio.com",
+    "project_id": "redsocial-68a70",
+    "storage_bucket": "redsocial-68a70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977446787826:android:e2026ab7b61f404be2ce6b",
+        "android_client_info": {
+          "package_name": "com.example.redsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977446787826-gtgnsjoa1ehvqce6vhrh6n4docbv67j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2qNg2kTvFZjHohD72D9PNwifVcJWbg-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977446787826-gtgnsjoa1ehvqce6vhrh6n4docbv67j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
