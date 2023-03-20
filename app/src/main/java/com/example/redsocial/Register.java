@@ -41,6 +41,7 @@ public class Register extends AppCompatActivity {
 
     void inicializar() {
         this.send = (Button) findViewById(R.id.btnAbrirRegister);
+        this.link = findViewById(R.id.linkLogin);
         this.user = findViewById(R.id.usuarioRegister);
         this.password = findViewById(R.id.passwordRegister);
         this.confirmPassword = findViewById(R.id.passwordConfirm);
@@ -52,10 +53,16 @@ public class Register extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful())
+                        if (task.isSuccessful()) {
                             Toast.makeText(Register.this, "Authentication saved.", Toast.LENGTH_SHORT).show();
-                        else
+                            //abro home users
+                            Intent i = new Intent(getApplicationContext(), homeUsuarios.class);
+                            startActivity(i);
+                            finish();
+
+                        } else {
                             Toast.makeText(Register.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
 

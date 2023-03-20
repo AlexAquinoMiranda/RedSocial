@@ -25,19 +25,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                // FirebaseAuth.getInstance().signOut();
+                System.out.print("register--------");
                 Intent i = new Intent(getApplicationContext(), Register.class);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.print("login--------");
                 //FirebaseAuth.getInstance().signOut();
                 Intent i = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
     }
