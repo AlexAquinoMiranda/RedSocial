@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Chat">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="384dp"
+        android:layout_height="610dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.968">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/negroLento">
+
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:layout_width="76dp"
+                        android:layout_height="48dp"
+                        android:background="#000000"
+                        android:backgroundTint="#000000"
+                        android:shadowRadius="30"
+                        android:text="Send"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:circularflow_defaultRadius="20dp"
+                        app:circularflow_radiusInDP="20dp"
+                        app:iconTint="#2196F3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintStart_toEndOf="@+id/textMensaje"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.529" />
+
+                    <EditText
+                        android:id="@+id/textMensaje"
+                        android:layout_width="168dp"
+                        android:layout_height="54dp"
+                        android:background="@color/negroLento"
+                        android:ems="10"
+                        android:hint="enter text"
+                        android:inputType="textPersonName"
+                        android:lineHeight="50dp"
+                        android:textColor="#FAF7F7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.116"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="369dp"
+                android:layout_height="542dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/revertChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/cardView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/NombreUsuario"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545"
+        app:maxImageSize="35dp"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/perfilUsuario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/NombreUsuario"
+        android:layout_width="189dp"
+        android:layout_height="53dp"
+        android:text="user"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toEndOf="@+id/perfilUsuario"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

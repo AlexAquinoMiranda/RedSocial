@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CreateUser">
+
+    <TextView
+        android:id="@+id/linkAlLogin"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sing In"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="219dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#1083DD"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linkAlLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwor">
+
+        <Button
+            android:id="@+id/abrirGalery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1083DD"
+            android:text="Sing Up"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:iconTint="#2196F3" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/passwor"
+        android:layout_width="252dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cardView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="Mail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nacimiento" />
+
+    <EditText
+        android:id="@+id/nacimiento"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="Nacimiento"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="LastName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nacimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/texto5"
+        android:layout_width="273dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="cursive"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F8F9FA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/negroLento"
+        android:ems="10"
+        android:hint="userName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

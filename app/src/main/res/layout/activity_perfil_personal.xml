@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de perfil -->
+
+    <!-- Nombre de usuario -->
+
+    <!-- Seguidores -->
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="285dp"
+        android:src="@drawable/logoapp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="17dp"
+        android:text="Nombre de usuario"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Botón Seguir -->
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="45dp"
+        android:text="0 seguidores"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Fotos -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/FotoPerfilPublic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logoapp"
+       />
+
+</RelativeLayout>

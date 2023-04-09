@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".CrearPublicacion">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="42dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcionPublicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePublicar">
+
+        <Button
+            android:id="@+id/abrirGalery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:text="Abrir Galería"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:iconTint="#2196F3" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSubir"
+        android:layout_width="87dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="46dp"
+        app:cardBackgroundColor="#028BF8"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tituloPublicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/subirImagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#028BF8"
+            android:text="subir"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:iconTint="#028BF8" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/tituloPublicacion"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:text="escribe el titulo"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="166dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="55dp"
+        android:text="Nueva publicación"
+        android:textAlignment="center"
+        android:textColor="#FDF8F8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tituloPublicacion"
+        app:layout_constraintEnd_toStartOf="@+id/cardSubir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <EditText
+        android:id="@+id/descripcionPublicacion"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/white"
+        android:text="escribe descripción"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <ImageView
+        android:id="@+id/imagePublicar"
+        android:layout_width="212dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="156dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcionPublicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPublicacion" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancelar"
+        android:layout_width="54dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        app:backgroundTint="#AC1414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionPublicacion"
+        app:srcCompat="@android:drawable/ic_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RedSocial</string>
+    <string name="title_activity_home_usuarios">homeUsuarios</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile_picture_description">tood</string>
+    <string name="like_icon_description">nad</string>
+</resources>

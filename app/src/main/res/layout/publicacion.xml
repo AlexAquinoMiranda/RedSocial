@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBF7F7"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:background="#242525"
+            android:backgroundTint="#1B1C1C">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="415dp"
+                android:layout_height="555dp"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.529">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/usuarioPublication"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp"
+                        android:fontFamily="monospace"
+                        android:text="Usuario"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFEFE"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/imgPublication"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.739"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.551" />
+
+                    <ImageView
+                        android:id="@+id/imgPublication"
+                        android:layout_width="407dp"
+                        android:layout_height="392dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.415"
+                        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnLike"
+                        android:layout_width="64dp"
+                        android:layout_height="60dp"
+                        android:clickable="true"
+                        android:contentDescription="TODO"
+                        app:backgroundTint="#000000"
+                        app:fabSize="auto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.046"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imgPublication"
+                        app:layout_constraintVertical_bias="0.338"
+                        app:maxImageSize="45dp"
+                        app:rippleColor="#C6AAAA"
+                        app:srcCompat="@drawable/dislike" />
+
+                    <TextView
+                        android:id="@+id/countLike"
+                        android:layout_width="247dp"
+                        android:layout_height="31dp"
+                        android:fontFamily="casual"
+                        android:text="A 15 personas le gusta esta foto"
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.154"
+                        app:layout_constraintStart_toEndOf="@+id/btnLike"
+                        app:layout_constraintTop_toBottomOf="@+id/imgPublication"
+                        app:layout_constraintVertical_bias="0.222" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="288dp"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="casual"
+                        android:text="Descripción."
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.661"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/countLike"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/FotoPerfilPublic"
+                        android:layout_width="88dp"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/ic_launcher_foreground"
+                        app:layout_constraintBottom_toTopOf="@+id/imgPublication"
+                        app:layout_constraintEnd_toStartOf="@+id/usuarioPublication"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#434343" />
+    </LinearLayout>
+
+</LinearLayout>
